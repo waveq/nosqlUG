@@ -12,11 +12,9 @@ Intel Core i3-2350M
 $ mongo --version
 MongoDB shell version: 2.6.5
 ```
-
-### Zadanie 1A
-
-Zadanie 1a polega na zaimportowaniu, do systemów baz danych uruchomionych na swoim komputerze, danych z pliku Train.csv bazy MongoDB.
-
+### Zadanie 1A:
+Polega na zaimportowaniu, do systemów baz danych uruchomionych na swoim komputerze, danych z pliku Train.csv bazy MongoDB.
+---
 Format pliku csv do znośnej przez mongo formy:
 ```
 cat Train.csv | tr "\n" " " | tr "\r" "\n" | head -n 6034196 > correct_train.csv
