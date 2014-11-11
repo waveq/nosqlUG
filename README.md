@@ -46,7 +46,8 @@ Zamienić string zawierający tagi na tablicę napisów z tagami następnie zlic
 Pamięć zapełniała się stopniowo by w końcu dojść do następującego poziomu "zapełnienia": 
 
 ![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1C%20ram.jpg?token=ABKxezPikvQ1Ndr05JYxayHCmlDlQrjeks5Ua5U9wA%3D%3D)
-
+```
 Wykonanie programu trwało: 58 min.
-Przetworzono: 6032934/6034195 rekordów.
 
+Przetworzono: 6032934/6034195 rekordów.
+```
