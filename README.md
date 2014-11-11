@@ -20,10 +20,18 @@ Format pliku csv do znośnej przez mongo formy:
 cat Train.csv | tr "\n" " " | tr "\r" "\n" | head -n 6034196 > correct_train.csv
 ```
 
+
 Import poprawionego pliku csv:
 ```
 mongoimport -d mydb -c train -type csv -file correct_train.csv --headerline
 ```
+
+![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20hdd.jpg?token=ABKxe1yjmn0aRp5LoKKymlg6uOE3tj45ks5Ua5NSwA%3D%3D)
+
+![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20cpu.jpg?token=ABKxe5-FInt7NepRp0BGUl39HguS5Qi2ks5Ua5NzwA%3D%3D)
+
+![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20RAM.jpg?token=ABKxexaoSMMzNxqZvHhHb9luHNh51Rgjks5Ua5OFwA%3D%3D)
+
 ### Zadanie 1B:
 **Zliczenie zaimportowanych rekordów**
 ```
