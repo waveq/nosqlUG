@@ -10,7 +10,6 @@
                 }
         },
         {
-                "_id" : ObjectId("54627fc9587be4957840944b"),
                 "miejscowosc" : "Chocznia",
                 "loc" : {
                         "type" : "Point",
