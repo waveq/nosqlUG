@@ -1,0 +1,28 @@
+{
+        "type": "FeatureCollection",
+        "features":
+        [
+                {
+                        "type": "Feature",
+                        "geometry" : {
+                                "_id" : "Łęgowo",
+                                "type" : "Point",
+                                "coordinates" : [
+                                        18.639603,
+                                        54.227259
+                                ]
+                        }
+                },
+                {
+                        "type": "Feature",
+                        "geometry" : {
+                                "_id" : "Miłobądz",
+                                "type" : "Point",
+                                "coordinates" : [
+                                        18.720703,
+                                        54.137997
+                                ]
+                        }
+                }
+        ]
+}
