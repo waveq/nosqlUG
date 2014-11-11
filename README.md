@@ -83,3 +83,17 @@ Przykładowy rekord wygląda następująco:
         "#miejscowosc" : "Mirosławice"
 }
 ```
+Za pomocą [skryptu](/scripts/correctBlackPoints.js) zmieniłem je do formatu:
+```
+{
+        "_id" : ObjectId("54627fc9587be49578409447"),
+        "miejscowosc" : "Pobiednik Wielki",
+        "loc" : {
+                "type" : "Point",
+                "coordinates" : [
+                        20.193543,
+                        50.081929
+                ]
+        }
+}
+```
