@@ -38,3 +38,13 @@ mongoimport -d mydb -c train -type csv -file correct_train.csv --headerline
 > db.train.count()
 6034195
 ```
+### Zadanie 1B:
+Zamienić string zawierający tagi na tablicę napisów z tagami następnie zliczyć wszystkie tagi i wszystkie różne tagi. Napisać program, który to zrobi korzystając z jednego ze sterowników.
+
+[1C.java](/scripts/1C.java)
+Pamięć zapełniała się stopniowo by w końcu dojść do następującego poziomu "zapełnienia": 
+
+![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1C%20ram.jpg?token=ABKxezPikvQ1Ndr05JYxayHCmlDlQrjeks5Ua5U9wA%3D%3D)
+
+Całość trwała: xxx
+
