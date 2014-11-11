@@ -57,3 +57,18 @@ Wykonanie programu trwało: 58 min.
 Przetworzono: 6032934/6034195 rekordów.
 Wszystkie tagi: 42060.
 ```
+
+### Zadanie 1D:
+Wyszukać w sieci dane zawierające obiekty GeoJSON. Następnie dane zapisać w bazie MongoDB.
+
+JSONy pobrałem ze strony: http://www.poipoint.pl/ jest to [lista czarnych punktów na drogach](http://www.poipoint.pl/poi_loading.php?poi=Czarne%20punkty&id=garmin) 
+
+Import pliku csv:
+```
+mongoimport -d mydb -c czarnepunkty --type csv --file Czarne.csv --headerline
+```
+
+Czas trwania
+```
+0.499s
+```
