@@ -137,5 +137,56 @@ Czarne punkty między miejscowościami: Gdańsk, Olsztyn, Bydgoszcz:
         }
 ]
 ```
+**[Near](/maps/near.geojson)**
+Czarne punkty w promieniu 50km od Warszawy:
+```
+db.blackpoints.find({ loc: {$near: {$geometry: punkt, $maxDistance: 50000} }  }).toArray()
+[
+        {
+                "_id" : ObjectId("54627fc9587be49578409458"),
+                "miejscowosc" : "Wólka Radzymińska",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                21.082645,
+                                52.410921
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be49578409477"),
+                "miejscowosc" : "Nowa Wieś",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                20.551673,
+                                52.201294
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be49578409442"),
+                "miejscowosc" : "Nowa Wieś",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                20.535043,
+                                52.202243
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be4957840943f"),
+                "miejscowosc" : "Stara Wieś",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                21.627526,
+                                52.08769
+                        ]
+                }
+        }
+]
+```
 
 
