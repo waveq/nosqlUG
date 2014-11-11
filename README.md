@@ -24,3 +24,9 @@ Import poprawionego pliku csv:
 ```
 mongoimport -d mydb -c train -type csv -file correct_train.csv --headerline
 ```
+### Zadanie 1B:
+**Zliczenie zaimportowanych rekordów**
+```
+> db.train.count()
+6034195
+```
