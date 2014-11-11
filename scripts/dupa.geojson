@@ -1,26 +1,18 @@
 {
-        "type": "FeatureCollection",
-        "features":
-        [
-                {
-                        "type": "Feature",
-                        "geometry" : {
-                                "type" : "Point",
-                                "coordinates" : [
-                                        19.460632,
-                                        49.877291
-                                ]
-                        }
-                },
-                {
-                        "type": "Feature",
-                        "geometry" : {
-                                "type" : "Point",
-                                "coordinates" : [
-                                        19.468466,
-                                        49.880842
-                                ]
-                        }
-                }
-        ]
+    "type": "FeatureCollection",
+    "features": [
+{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -85.7569171, 34.9495258
+                ]
+            },
+            "properties": {
+                "title": "Bonaventure Cemetery",
+                "description": "Stream"
+            }
+        }
+]
 }
