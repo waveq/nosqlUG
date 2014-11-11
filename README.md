@@ -28,7 +28,7 @@ mongoimport -d mydb -c train -type csv -file correct_train.csv --headerline
 
 Czas trwania:
 ```
-28 minut.
+28m
 ```
 
 ![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20hdd.jpg?token=ABKxe1yjmn0aRp5LoKKymlg6uOE3tj45ks5Ua5NSwA%3D%3D)
@@ -71,4 +71,15 @@ mongoimport -d mydb -c czarnepunkty --type csv --file Czarne.csv --headerline
 Czas trwania
 ```
 0.499s
+```
+
+Przykładowy rekord wygląda następująco:
+```
+{
+        "_id" : ObjectId("5462783c587be495784093ea"),
+        "#szerokosc" : 16.785888,
+        "#dlugosc" : 50.958284,
+        "#typ" : "Czarne punkty",
+        "#miejscowosc" : "Mirosławice"
+}
 ```
