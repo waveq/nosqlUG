@@ -4,8 +4,7 @@
         [
                 {
                         "type": "Feature",
-                        "miejscowosc" : "Chocznia",
-                        "loc" : {
+                        "geometry" : {
                                 "type" : "Point",
                                 "coordinates" : [
                                         19.460632,
@@ -15,8 +14,7 @@
                 },
                 {
                         "type": "Feature",
-                        "miejscowosc" : "Chocznia",
-                        "loc" : {
+                        "geometry" : {
                                 "type" : "Point",
                                 "coordinates" : [
                                         19.468466,
