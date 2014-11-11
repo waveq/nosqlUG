@@ -15,7 +15,6 @@ public class NoSql {
 			MongoClient mc = new MongoClient();
 			DB dbNosql = mc.getDB("mydb");
 			DBCollection cTrain = dbNosql.getCollection("train");
-			System.out.println("Ilość rekordów: "+cTrain.count());
 			DBCursor cur = cTrain.find();
 			long startTime = System.currentTimeMillis();
 			DBObject rec;
@@ -39,9 +38,9 @@ public class NoSql {
 			}
 			cur.close();
 			long time = System.currentTimeMillis() - startTime;
-			System.out.println("Czas działania: " + ((double)time)/1000.0 + "s");
-			System.out.println("Przetworzono: " + checkCount + " rekordów.");
-			System.out.println("Ilość różnych tagów: "+cTrain.distinct("Tags").size());			
+			System.out.println("Wykonanie programu trwało: " + ((double)time)/1000.0/60 + "min");
+			System.out.println("Przetworzono: " + checkCount"/"+ cTrain.count() + " rekordów.");
+			System.out.println("Wszystkie tagi: "+cTrain.distinct("Tags").size());			
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		}
