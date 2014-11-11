@@ -10,11 +10,7 @@
                                         19.460632,
                                         49.877291
                                 ]
-                        },
-                                "properties": {
-                                        "title": "Bonaventure Cemetery",
-                                        "description": "Stream"
-            }
+                        }
                 },
                 {
                         "type": "Feature",
@@ -24,11 +20,7 @@
                                         19.468466,
                                         49.880842
                                 ]
-                        },
-                                    "properties": {
-                                        "title": "dupa Cemetery",
-                                        "description": "dsadsa"
-                                    }
+                        }
                 }
         ]
 }
