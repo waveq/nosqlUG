@@ -138,6 +138,7 @@ Czarne punkty między miejscowościami: Gdańsk, Olsztyn, Bydgoszcz:
 ]
 ```
 **[Near](/maps/near.geojson)**
+
 Czarne punkty w promieniu 50km od Warszawy:
 ```
 db.blackpoints.find({ loc: {$near: {$geometry: punkt, $maxDistance: 50000} }  }).toArray()
