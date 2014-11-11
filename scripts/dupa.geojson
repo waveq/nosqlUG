@@ -1,0 +1,24 @@
+[
+        {
+                "_id" : ObjectId("54627fc9587be4957840944a"),
+                "miejscowosc" : "Chocznia",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                19.460632,
+                                49.877291
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be4957840944b"),
+                "miejscowosc" : "Chocznia",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                19.468466,
+                                49.880842
+                        ]
+                }
+        }
+]
