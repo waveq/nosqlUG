@@ -445,7 +445,7 @@ db.blackpoints.find({loc: {$geoWithin: {$geometry: obszar}}}).toArray()
 ]
 ```
 
-**[Near + regex](/maps/bigPolygon.geojson)**
+**[Near + regex](/maps/nearRegex.geojson)**
 
 Czarne punkty w miejscowościach na literę "M", położone w promieniu 100km od Wrocławia: 
 
