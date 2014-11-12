@@ -65,7 +65,7 @@ JSONy pobrałem ze strony: http://www.poipoint.pl/ jest to [lista czarnych punkt
 
 Import pliku csv:
 ```
-mongoimport -d mydb -c czarnepunkty --type csv --file Czarne.csv --headerline
+mongoimport -d mydb -c blackpoints --type csv --file Czarne.csv --headerline
 ```
 
 Czas trwania
