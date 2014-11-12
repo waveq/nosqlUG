@@ -102,16 +102,16 @@ Za pomocą [skryptu](/scripts/correctBlackPoints.js) zmieniłem je do formatu:
 
 Czarne punkty między miejscowościami: Gdańsk, Olsztyn, Bydgoszcz:
 ```
- > var obszar = {
-...    "type": "Polygon",
-...    "coordinates": [[
-...        [18.64, 54.34],
-...        [20.47, 53.78],
-...        [18.00, 53.11],
-...        [18.64, 54.34]
-...    ]]
-...  }
-> db.blackpoints.find({loc: {$geoWithin: {$geometry: obszar}}}).toArray()
+var obszar = {
+   "type": "Polygon",
+   "coordinates": [[
+       [18.64, 54.34],
+       [20.47, 53.78],
+       [18.00, 53.11],
+       [18.64, 54.34]
+   ]]
+}
+db.blackpoints.find({loc: {$geoWithin: {$geometry: obszar}}}).toArray()
 [
         {
                 "_id" : ObjectId("54627fc9587be49578409461"),
