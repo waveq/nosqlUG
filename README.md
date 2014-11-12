@@ -43,6 +43,11 @@ Czas trwania:
 > db.train.count()
 6034195
 ```
+
+Czas trwania
+```
+0.224s
+```
 ### Zadanie 1C:
 Zamienić string zawierający tagi na tablicę napisów z tagami następnie zliczyć wszystkie tagi i wszystkie różne tagi. Napisać program, który to zrobi korzystając z jednego ze sterowników.
 
