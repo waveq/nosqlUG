@@ -1,0 +1,96 @@
+{
+        "type": "FeatureCollection",
+        "features":
+        [
+                {
+                        "type": "Feature",
+                        "geometry" : {
+                                "type" : "Point",
+                                "coordinates" : [
+                                        20.193543,
+                                        50.081929
+                                ]
+                        }
+                },
+                {
+                        "type": "Feature",
+                        "geometry" : {
+                                "type" : "Point",
+                                "coordinates" : [
+                                        20.208933,
+                                        50.083553
+                                ]
+                        }
+                },
+                {
+                        "type": "Feature",
+                        "geometry" : {
+                                "type" : "Point",
+                                "coordinates" : [
+                                        19.978632,
+                                        50.164962
+                                ]
+                        }
+                },
+                
+                {
+                        "type": "Feature",
+                        "geometry" : {
+                                "type" : "Point",
+                                "coordinates" : [
+                                        22.45909,
+                                        51.218987
+                                ]
+                        }
+                },
+                {
+                        "type": "Feature",
+                        "geometry" : {
+                                "type" : "Point",
+                                "coordinates" : [
+                                        22.40408,
+                                        51.15494
+                                ]
+                        }
+                },
+                {
+                        "type": "Feature",
+                        "geometry" : {
+                                "type" : "Point",
+                                "coordinates" : [
+                                        20.29134,
+                                        50.62867
+                                ]
+                        }
+                },
+                {
+                        "type": "Feature",
+                        "geometry" : {
+                                "type" : "Point",
+                                "coordinates" : [
+                                        20.70974,
+                                        50.95562
+                                ]
+                        }
+                },
+                {
+                        "type": "Feature",
+                        "geometry" : {
+                                "type" : "Point",
+                                "coordinates" : [
+                                        20.7621,
+                                        50.98183
+                                ]
+                        }
+                },
+                
+                {
+                        "type": "Feature",
+                                "type": "Polygon",
+                                "coordinates": [
+                                [ [19.95, 50.05], [19.95, 51.25], 
+                                [22.55, 50.05], [19.95, 50.05] ]
+                                ]
+                }
+        ]
+}
