@@ -313,3 +313,134 @@ db.blackpoints.find({
         }
 ]
 ```
+
+**[Bardziej złożony polygon](/maps/bigPolygon.geojson)**
+
+Czarne punkty w figurze między Bydgoszczem i Lublinem z wyłączeniem Warszawy: 
+
+```
+db.blackpoints.find({loc: {$geoWithin: {$geometry: obszar}}}).toArray()
+[
+        {
+                "_id" : ObjectId("54627fc9587be49578409472"),
+                "miejscowosc" : "Otłoszyn",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                18.716669,
+                                52.913949
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be4957840945e"),
+                "miejscowosc" : "Otłoczyn",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                18.721196,
+                                52.907316
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be4957840945f"),
+                "miejscowosc" : "Skępe",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                19.345207,
+                                52.876311
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be4957840943f"),
+                "miejscowosc" : "Stara Wieś",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                21.627526,
+                                52.08769
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be49578409456"),
+                "miejscowosc" : "Siemiatycze",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                22.863777,
+                                52.42722
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be49578409455"),
+                "miejscowosc" : "Łuszczów",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                22.734167,
+                                51.304728
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be4957840945a"),
+                "miejscowosc" : "Lublin",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                22.45909,
+                                51.218987
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be49578409480"),
+                "miejscowosc" : "Jastków",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                22.4461,
+                                51.29703
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be49578409481"),
+                "miejscowosc" : "Garbów",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                22.30439,
+                                51.3623
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be49578409482"),
+                "miejscowosc" : "Życzyn",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                22.07312,
+                                51.4949
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be4957840947b"),
+                "miejscowosc" : "Strzeszkowice",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                22.40408,
+                                51.15494
+                        ]
+                }
+        }
+]
+```
