@@ -10,8 +10,11 @@
                                         17.20947,
                                         50.99181
                                 ]
-                        }
-        },
+                        },
+                        "properties": {
+                                "name": "Marcinkowice"
+                    }
+                },
                 {
                         "type": "Feature",
                         "geometry" : {
