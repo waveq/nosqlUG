@@ -44,7 +44,7 @@ Czas trwania:
 6034195
 ```
 
-Czas trwania
+Czas trwania:
 ```
 0.224s
 ```
@@ -73,7 +73,7 @@ Import pliku csv:
 mongoimport -d mydb -c blackpoints --type csv --file Czarne.csv --headerline
 ```
 
-Czas trwania
+Czas trwania:
 ```
 0.499s
 ```
