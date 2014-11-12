@@ -190,4 +190,27 @@ db.blackpoints.find({ loc: {$near: {$geometry: punkt, $maxDistance: 50000} }  })
 ]
 ```
 
+**[LineString](/maps/lineString.geojson)**
 
+Czarne punkty pomiędzy punktem w Łęgowie a Warszawą:
+```
+var linia = {
+  "type": "LineString",
+  "coordinates": [[18.720703, 54.137997], [21.03, 52.23]]
+}
+
+db.blackpoints.find({loc: {$geoIntersects: {$geometry: linia}}}).toArray()
+[
+        {
+                "_id" : ObjectId("54627fc9587be49578409463"),
+                "miejscowosc" : "Miłobądz",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                18.720703,
+                                54.137997
+                        ]
+                }
+        }
+]
+```
