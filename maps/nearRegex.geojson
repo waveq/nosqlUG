@@ -24,6 +24,9 @@
                                         50.977669
                                 ]
                         }
+                        "properties": {
+                                "name": "Marcinkowice"
+                    }
                 },
                 {
                         "type": "Feature",
@@ -34,6 +37,9 @@
                                         50.958284
                                 ]
                         }
+                        "properties": {
+                                "name": "Mirosławice"
+                    }
                 }
         ]
 }
