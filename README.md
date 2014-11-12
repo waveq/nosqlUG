@@ -13,7 +13,9 @@ $ mongo --version
 MongoDB shell version: 2.6.5
 ```
 ### Zadanie 1A:
-**Polega na zaimportowaniu, do systemów baz danych uruchomionych na swoim komputerze, danych z pliku Train.csv bazy MongoDB.**
+**Polega na zaimportowaniu, do systemów baz danych uruchomionych na swoim komputerze, danych z pliku Train.csv bazy MongoDB i PostgreSQL**
+
+**Mongo**
 
 Format pliku csv do znośnej przez mongo formy:
 ```
@@ -36,6 +38,26 @@ Czas trwania:
 ![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20cpu.jpg?token=ABKxe5-FInt7NepRp0BGUl39HguS5Qi2ks5Ua5NzwA%3D%3D)
 
 ![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20RAM.jpg?token=ABKxexaoSMMzNxqZvHhHb9luHNh51Rgjks5Ua5OFwA%3D%3D)
+
+**PostgreSQL**
+
+```
+SQL
+CREATE TABLE train(
+   id TEXT PRIMARY KEY     NOT NULL,
+   Title           TEXT,
+   Body            TEXT,
+   Tags        TEXT
+);
+ 
+copy train(Id,Title,Body,Tags) from 'C:\Train.csv' with delimiter ',' csv header
+```
+
+Czas trwania:
+```
+35m
+```
+
 
 ### Zadanie 1B:
 **Zliczenie zaimportowanych rekordów**
