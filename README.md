@@ -444,3 +444,51 @@ db.blackpoints.find({loc: {$geoWithin: {$geometry: obszar}}}).toArray()
         }
 ]
 ```
+
+**[Near + regex](/maps/bigPolygon.geojson)**
+
+Czarne punkty w miejscowościach na literę "M", położone w promieniu 100km od Wrocławia: 
+
+```
+var wroc = {
+  "type": "Point", 
+  "coordinates": [17.00, 51.11],
+}
+db.blackpoints.find({ loc: {$near: {$geometry: wroc, $maxDistance: 100000} },
+miejscowosc: { $regex: 'M.*'}}).toArray()
+[
+        {
+                "_id" : ObjectId("54627fc9587be4957840944f"),
+                "miejscowosc" : "Marcinkowice",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                17.20947,
+                                50.99181
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be4957840948e"),
+                "miejscowosc" : "Marcinkowice",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                17.233743,
+                                50.977669
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc8587be4957840943e"),
+                "miejscowosc" : "Mirosławice",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                16.785888,
+                                50.958284
+                        ]
+                }
+        }
+]
+```
