@@ -214,3 +214,102 @@ db.blackpoints.find({loc: {$geoIntersects: {$geometry: linia}}}).toArray()
         }
 ]
 ```
+
+**[Box](/maps/box.geojson)**
+
+Czarne punkty w prostokącie między Krakowem i Lublinem:
+```
+db.blackpoints.find({
+	loc: { $geoWithin: {$box: [[ 19.95, 50.05 ], [ 22.55, 51.25 ]] } }
+	}).toArray()
+[
+        {
+                "_id" : ObjectId("54627fc9587be49578409447"),
+                "miejscowosc" : "Pobiednik Wielki",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                20.193543,
+                                50.081929
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be49578409448"),
+                "miejscowosc" : "Pobiednik Wielki",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                20.208933,
+                                50.083553
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be49578409441"),
+                "miejscowosc" : "Michałowice",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                19.978632,
+                                50.164962
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be4957840945a"),
+                "miejscowosc" : "Lublin",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                22.45909,
+                                51.218987
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be4957840947b"),
+                "miejscowosc" : "Strzeszkowice",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                22.40408,
+                                51.15494
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be4957840947e"),
+                "miejscowosc" : "Jędrzejów",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                20.29134,
+                                50.62867
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be49578409483"),
+                "miejscowosc" : "Barcza",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                20.70974,
+                                50.95562
+                        ]
+                }
+        },
+        {
+                "_id" : ObjectId("54627fc9587be49578409484"),
+                "miejscowosc" : "Gózd",
+                "loc" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                20.7621,
+                                50.98183
+                        ]
+                }
+        }
+]
+```
