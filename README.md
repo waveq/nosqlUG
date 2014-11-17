@@ -58,6 +58,13 @@ Czas trwania:
 35m
 ```
 
+![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20PG%20HDD.jpg?token=ABKxe0wA3HanH85e7aDdsPG4xPDfyQZ_ks5Uc6BZwA%3D%3D)
+
+![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1a%20pg%20cpu.jpg?token=ABKxe7TBtw4M-PqUzH2QKApCy_XtjRQFks5Uc6BnwA%3D%3D)
+
+![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1a%20pg%20ram.jpg?token=ABKxe4Faj3iNL0yF6mxqWPimiQ50YX73ks5Uc6B1wA%3D%3D)
+
+
 
 ### Zadanie 1B:
 **Zliczenie zaimportowanych rekordów**
