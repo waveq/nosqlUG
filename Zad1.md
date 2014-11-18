@@ -33,11 +33,11 @@ Czas trwania:
 28m
 ```
 
-![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20hdd.jpg?token=ABKxe1yjmn0aRp5LoKKymlg6uOE3tj45ks5Ua5NSwA%3D%3D)
+![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20hdd.jpg?token=ABKxe2E9CbYd4PW1a8pxbRiRPK00aNaVks5UdNC4wA%3D%3D)
 
-![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20cpu.jpg?token=ABKxe5-FInt7NepRp0BGUl39HguS5Qi2ks5Ua5NzwA%3D%3D)
+![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20cpu.jpg?token=ABKxe4zbr0YkQStkTZOed7iDhhxHVbuvks5UdNDXwA%3D%3D)
 
-![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20RAM.jpg?token=ABKxexaoSMMzNxqZvHhHb9luHNh51Rgjks5Ua5OFwA%3D%3D)
+![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20RAM.jpg?token=ABKxe36ROhz8zaisxt15IV3wLAN9Y2f5ks5UdNDkwA%3D%3D)
 
 **PostgreSQL**
 
@@ -84,7 +84,7 @@ Zamienić string zawierający tagi na tablicę napisów z tagami następnie zlic
 
 Pamięć zapełniała się stopniowo by w końcu dojść do następującego poziomu "zapełnienia": 
 
-![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1C%20ram.jpg?token=ABKxezPikvQ1Ndr05JYxayHCmlDlQrjeks5Ua5U9wA%3D%3D)
+![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1C%20ram.jpg?token=ABKxe9l7pBqISk3Hd4MrmjAhlGeHeWqjks5UdNEdwA%3D%3D)
 ```
 
 Przetwarzanie trwało: 58 min.
