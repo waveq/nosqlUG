@@ -89,7 +89,8 @@ Pamięć zapełniała się stopniowo by w końcu dojść do następującego pozi
 Wykonanie programu trwało: 58 min.
 
 Przetworzono: 6032934/6034195 rekordów.
-Wszystkie tagi: 42060.
+Wszystkie różne tagi: 42060.
+Wszystkie tagi: 17408685.
 ```
 
 ### Zadanie 1D:
