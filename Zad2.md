@@ -27,3 +27,10 @@ Czas trwania:
 ```
 28m
 ```
+
+![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/2%20CPU.jpg?token=ABKxe4KL4RglMSUG7ksDhTP6mhhDUsAIks5UdOl9wA%3D%3D)
+
+![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/2%20HDD.jpg?token=ABKxe8maqj0J08R5YJJ6XKVolkeAyF1yks5UdOmMwA%3D%3D)
+
+![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/2%20RAM.jpg?token=ABKxe4G6kgZPtmeFr7UMsJDrKJH6yPriks5UdOmWwA%3D%3D)
+
