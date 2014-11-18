@@ -11,36 +11,43 @@ import com.mongodb.MongoClient;
 public class NoSql {
 	public static void main(String[] args) {
 		try {
+			int tagCounter = 0;
 			long checkCount = 0;
 			MongoClient mc = new MongoClient();
 			DB dbNosql = mc.getDB("mydb");
 			DBCollection cTrain = dbNosql.getCollection("train");
-			DBCursor cur = cTrain.find();
+			System.out.println("Ilość rekordóww: "+cTrain.count());
+			DBCursor cursor = cTrain.find();
 			long startTime = System.currentTimeMillis();
-			DBObject rec;
+			DBObject record;
 			DBObject updateRec = new BasicDBObject();
-			while(cur.hasNext()){
+			while(cursor.hasNext()){
 				try{
-					rec = cur.next();
-					for(String key : rec.keySet()){
-						Object val = rec.get(key);
+					record = cursor.next();
+					for(String key : record.keySet()){
+						Object value = record.get(key);
 						if(key.equals("Tags")){
-							String[] aTags = ((String)val).split(" ");
-							val = aTags;
+							String[] aTags = ((String)value).split(" ");
+							for(String tag : aTags) {
+								tagCounter++;
+							}
+							value = aTags;
 						}
-						updateRec.put(key, val);
+
+						updateRec.put(key, value);
 					}
-					cTrain.update(rec, updateRec);
+					cTrain.update(record, updateRec);
 					checkCount++;
 				}catch(Exception e){
 					e.printStackTrace();
 				}
 			}
-			cur.close();
+			cursor.close();
 			long time = System.currentTimeMillis() - startTime;
-			System.out.println("Wykonanie programu trwało: " + ((double)time)/1000.0/60 + "min");
-			System.out.println("Przetworzono: " + checkCount"/"+ cTrain.count() + " rekordów.");
-			System.out.println("Wszystkie tagi: "+cTrain.distinct("Tags").size());			
+			System.out.println("Czas działania: " + ((double)time)/1000.0 + "s");
+			System.out.println("Przetworzono: " + checkCount + " rekordów.");
+			System.out.println("Wszystkie różne tagi: "+cTrain.distinct("Tags").size());	
+			System.out.println("Wszystkie tagi: "+tagCounter);
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		}
