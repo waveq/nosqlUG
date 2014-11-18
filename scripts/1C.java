@@ -44,7 +44,7 @@ public class NoSql {
 			}
 			cursor.close();
 			long time = System.currentTimeMillis() - startTime;
-			System.out.println("Czas działania: " + ((double)time)/1000.0 + "s");
+			System.out.println("Przetwarzanie trwało: " + ((double)time)/1000.0 + "s");
 			System.out.println("Przetworzono: " + checkCount + " rekordów.");
 			System.out.println("Wszystkie różne tagi: "+cTrain.distinct("Tags").size());	
 			System.out.println("Wszystkie tagi: "+tagCounter);
