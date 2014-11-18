@@ -87,7 +87,7 @@ Pamięć zapełniała się stopniowo by w końcu dojść do następującego pozi
 ![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1C%20ram.jpg?token=ABKxezPikvQ1Ndr05JYxayHCmlDlQrjeks5Ua5U9wA%3D%3D)
 ```
 
-Przetwarzania trwało: 58 min.
+Przetwarzanie trwało: 58 min.
 Przetworzono: 6032934/6034195 rekordów.
 Wszystkie różne tagi: 42060.
 Wszystkie tagi: 17408685.
