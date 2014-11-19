@@ -107,13 +107,13 @@ public static void mostCommonMovieNames(DBCollection coll) {
 	System.out.println(output.results());
 } 
 ```
-|         Tytuł         |  Suma |
-|:---------------------:|:-----:|
-|     Modern Family     | 74294 |
-| Marvel's The Avengers | 64356 |
-|        Mad Men        | 42611 |
-|      MythBusters      | 29089 |
-|     Monsters, Inc     | 19805 |
+|         Tytuł         |  Wystąpienia |
+|:---------------------:|:------------:|
+|     Modern Family     |     74294    |
+| Marvel's The Avengers |     64356    |
+|        Mad Men        |     42611    |
+|      MythBusters      |     29089    |
+|     Monsters, Inc     |     19805    |
 
 ---
 
@@ -148,13 +148,13 @@ public static void mostCommentedMovies(DBCollection coll) {
 	System.out.println(output.results());
 	}
 ```
-|                     Tytuł                     | Suma |
-|:---------------------------------------------:|:----:|
-|              Slumdog Millionaire              |  30  |
-|                   True Blood                  |  15  |
-| Harry Potter and the Deathly Hallows: Part II |  13  |
-|                     Avatar                    |  11  |
-|                The Dark Knight                |  11  |
+|                     Tytuł                     | Komentarze |
+|:---------------------------------------------:|:----------:|
+|              Slumdog Millionaire              |     30     |
+|                   True Blood                  |     15     |
+| Harry Potter and the Deathly Hallows: Part II |     13     |
+|                     Avatar                    |     11     |
+|                The Dark Knight                |     11     |
 
 ---
 
@@ -189,12 +189,12 @@ public static void mostLikingUsers(DBCollection coll) {
 	System.out.println(output.results());
 }
 ```
-|     Użytkownik    |  Suma |
-|:-----------------:|:-----:|
-| jesusvarelaacosta | 13562 |
-|    gluemanblues   | 12932 |
-|       s3v3ns      | 11520 |
-|    johnnym2001    | 11436 |
-|      bangwid      |  9237 |
+|     Użytkownik    |  Lajki |
+|:-----------------:|:------:|
+| jesusvarelaacosta |  13562 |
+|    gluemanblues   |  12932 |
+|       s3v3ns      |  11520 |
+|    johnnym2001    |  11436 |
+|      bangwid      |  9237  |
 
 
