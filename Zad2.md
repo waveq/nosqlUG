@@ -35,4 +35,137 @@ Czas trwania:
 
 ### Zapytania:
 
-[Klasa z rozwiązaniem w javie](/scripts/2.java)
+**[Klasa z rozwiązaniem w javie](/scripts/2.java)**
+
+**[Reżyserzy mający imię na literę 'H', którzy mają na koncie najwięcej filmów](/scripts/s1.js)**
+
+
+### JS
+```
+db.getglue.aggregate( 
+ 	{ $match: {"director": { $regex: '^H.*'}} },
+	{ $match: {"modelName": "movies"} },
+    { $group: 
+    	{
+    		_id: {"Typ programu":"$modelName", "Reżyser": "$director"}, 
+    		count: {$sum: 1}
+    	}
+    },
+    { $sort: {count: -1} },
+    { $limit : 10}
+    );
+```
+
+### JAVA
+
+```
+	public static void directorsWithMostMovies(DBCollection coll) {
+		DBObject Xmatch = (DBObject) JSON.parse("{ $match: {'director': { $regex: '^H.*'}} }");
+		DBObject Xmatch2 = (DBObject) JSON.parse("{ $match: {'modelName': 'movies'} }");
+		DBObject Xgroup = (DBObject) JSON.parse("{ $group: {_id: {'Typ programu':'$modelName', 'Reżyser': '$director'}, count: {$sum: 1}}");
+		DBObject Xsort = (DBObject) JSON.parse(" { $sort: {count: -1} }");
+		DBObject Xlimit = (DBObject) JSON.parse("{ $limit : 10}");
+		
+		AggregationOutput output = coll.aggregate(Xmatch, Xmatch2, Xgroup, Xsort, Xlimit);
+		System.out.println(output.results());
+	}
+```
+---
+
+**[Najczęściej występujące filmy na literkę 'M'.](/scripts/s2.js)**
+
+### JS
+
+```
+db.getglue.aggregate(
+    { $match: {"title": { $regex: '^M.*'}} },
+    { $group: 
+        {_id: {Tytuł : "$title"}, 
+        count: {$sum: 1}} 
+    },
+    { $sort: {count: -1} },
+    { $limit : 10}
+    )
+```
+
+### JAVA
+
+```
+	public static void mostCommonMovieNames(DBCollection coll) {
+		DBObject Xmatch = (DBObject) JSON.parse("{ $match: {'title': { $regex: '^M.*'}} }");
+		DBObject Xgroup = (DBObject) JSON.parse("{ $group: {_id: {'Tytuł' : '$title'}, count: {$sum: 1}} }");
+		DBObject Xsort = (DBObject) JSON.parse("{ $sort: {count: -1} }");
+		DBObject Xlimit = (DBObject) JSON.parse("{ $limit : 10}");
+		
+		AggregationOutput output = coll.aggregate(Xmatch, Xgroup, Xsort, Xlimit);
+		System.out.println(output.results());
+	} 
+```
+---
+
+**[Filmy, które mają najwięcej komentarzy.](/scripts/s3.js)**
+
+### JS
+
+```
+db.getglue.aggregate( 
+	{ $match: 
+		{ action: "Comment" }
+	},
+	{ $group: 
+		{ _id: { Tytuł : "$title" }, count: {"$sum": 1} } 
+	}, 
+	{ $sort: 
+		{ "count": -1 } 
+	}, 
+	{ $limit: 10 } )
+```
+
+### Java
+
+```
+	public static void mostCommentedMovies(DBCollection coll) {
+		DBObject Xmatch = (DBObject) JSON.parse("{ $match: { action: 'Comment' }}");
+		DBObject Xgroup = (DBObject) JSON.parse("{ $group: { _id: { Tytuł : '$title' }, 'count': {'$sum': 1} } }");
+		DBObject Xsort = (DBObject) JSON.parse("{ $sort: { 'count': -1 } }");
+		DBObject Xlimit = (DBObject) JSON.parse("{ $limit: 10 }");
+		
+		AggregationOutput output = coll.aggregate(Xmatch, Xgroup, Xsort, Xlimit);
+		System.out.println(output.results());
+	}
+```
+---
+
+**[Najczęściej lajkujący użytkownicy.](/scripts/s4.js)**
+
+### JS
+
+```
+db.sgetglue.aggregate( 
+	{ $match: 
+		{ action: "Liked" }
+	},
+	{ $group: 
+		{ _id: { Użytkownik : "$userId" }, count: {"$sum": 1} } 
+	}, 
+	{ $sort: 
+		{ "count": -1 } 
+	}, 
+	{ $limit: 10 } )
+```
+
+### JAVA
+
+```
+	public static void mostLikingUsers(DBCollection coll) {
+		DBObject Xmatch = (DBObject) JSON.parse("{ $match:{ action: 'Liked' }}");
+		DBObject Xgroup = (DBObject) JSON.parse("{ $group: { _id: { Użytkownik : '$userId' }, 'count': {'$sum': 1} } }");
+		DBObject Xsort = (DBObject) JSON.parse("{ $sort: { 'count': -1 } }");
+		DBObject Xlimit = (DBObject) JSON.parse("{ $limit: 10 }");
+		
+		AggregationOutput output = coll.aggregate(Xmatch, Xgroup, Xsort, Xlimit);
+		System.out.println(output.results());
+	}
+```
+
+
