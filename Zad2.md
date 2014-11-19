@@ -107,6 +107,14 @@ public static void mostCommonMovieNames(DBCollection coll) {
 	System.out.println(output.results());
 } 
 ```
+|         Tytuł         |  Suma |
+|:---------------------:|:-----:|
+|     Modern Family     | 74294 |
+| Marvel's The Avengers | 64356 |
+|        Mad Men        | 42611 |
+|      MythBusters      | 29089 |
+|     Monsters, Inc     | 19805 |
+
 ---
 
 **[Filmy, które mają najwięcej komentarzy.](/scripts/s3.js)**
