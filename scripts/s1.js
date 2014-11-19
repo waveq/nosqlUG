@@ -11,7 +11,7 @@ db.getglue.aggregate(
     	}
     },
     { $sort: {count: -1} },
-    { $limit : 10}
+    { $limit : 5}
     ).toArray();
 
 print(JSON.stringify(collection, null, 4));

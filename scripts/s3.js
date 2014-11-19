@@ -11,7 +11,7 @@ db.sgetglue.aggregate(
 	{ $sort: 
 		{ "count": -1 } 
 	}, 
-	{ $limit: 10 } ).toArray();
+	{ $limit: 5 } ).toArray();
 
 print(JSON.stringify(collection, null, 4));
 // najczesciej skomentowane filmy
