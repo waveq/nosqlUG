@@ -52,7 +52,7 @@ db.getglue.aggregate(
     	}
     },
     { $sort: {count: -1} },
-    { $limit : 10} );
+    { $limit : 5 } );
 ```
 
 ### JAVA
@@ -83,7 +83,7 @@ db.getglue.aggregate(
         count: {$sum: 1}} 
     },
     { $sort: {count: -1} },
-    { $limit : 10} );
+    { $limit : 5 } );
 ```
 
 ### JAVA
@@ -116,7 +116,7 @@ db.getglue.aggregate(
 	{ $sort: 
 		{ "count": -1 } 
 	}, 
-	{ $limit: 10 } );
+	{ $limit: 5 } );
 ```
 
 ### Java
@@ -149,7 +149,7 @@ db.sgetglue.aggregate(
 	{ $sort: 
 		{ "count": -1 } 
 	}, 
-	{ $limit: 10 } );
+	{ $limit: 5 } );
 ```
 
 ### JAVA
