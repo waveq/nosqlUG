@@ -69,6 +69,14 @@ public static void directorsWithMostMovies(DBCollection coll) {
 	System.out.println(output.results());
 }
 ```
+|     Reżyser    | Typ programu | Ilość wystąpień |
+|:--------------:|:------------:|:---------------:|
+|  Henry Selick  |    movies    |        70       |
+|  Hayo Miyazaki |    movies    |        44       |
+|  Harold Ramis  |    movies    |        12       |
+|  Herbert Ross  |    movies    |        7        |
+| Hamilton Luske |    movies    |        5        |
+
 ---
 
 **[Najczęściej występujące filmy na literkę 'M'.](/scripts/s2.js)**
