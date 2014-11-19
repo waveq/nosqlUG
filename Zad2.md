@@ -148,6 +148,14 @@ public static void mostCommentedMovies(DBCollection coll) {
 	System.out.println(output.results());
 	}
 ```
+|                     Tytuł                     | Suma |
+|:---------------------------------------------:|:----:|
+|              Slumdog Millionaire              |  30  |
+|                   True Blood                  |  15  |
+| Harry Potter and the Deathly Hallows: Part II |  13  |
+|                     Avatar                    |  11  |
+|                The Dark Knight                |  11  |
+
 ---
 
 **[Najczęściej lajkujący użytkownicy.](/scripts/s4.js)**
