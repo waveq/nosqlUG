@@ -8,7 +8,7 @@ db.sgetglue.aggregate(
         count: {$sum: 1}} 
     },
     { $sort: {count: -1} },
-    { $limit : 5}
+    { $limit : 5 }
     ).toArray();
 print(JSON.stringify(collection, null, 4));
 
