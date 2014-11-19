@@ -33,3 +33,6 @@ Czas trwania:
 
 ![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/2%20RAM.jpg?token=ABKxe4G6kgZPtmeFr7UMsJDrKJH6yPriks5UdOmWwA%3D%3D)
 
+### Zapytania:
+
+[Klasa z rozwiązaniem w javie](/scripts/2.java)
