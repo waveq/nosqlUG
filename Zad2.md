@@ -189,5 +189,12 @@ public static void mostLikingUsers(DBCollection coll) {
 	System.out.println(output.results());
 }
 ```
+|     Użytkownik    |  Suma |
+|:-----------------:|:-----:|
+| jesusvarelaacosta | 13562 |
+|    gluemanblues   | 12932 |
+|       s3v3ns      | 11520 |
+|    johnnym2001    | 11436 |
+|      bangwid      |  9237 |
 
 
