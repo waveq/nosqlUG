@@ -54,14 +54,14 @@ copy train(Id,Title,Body,Tags) from 'C:\Train.csv' with delimiter ',' csv header
 
 ![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1a%20pg%20ram.jpg?token=ABKxe4Faj3iNL0yF6mxqWPimiQ50YX73ks5Uc6B1wA%3D%3D)
 
----
+--
 ### Czas trwania importów:
 
 |   Mongo  | PostgreSQL |
 |:--------:|:----------:|
 | 28 minut |  35 minut  |
 
-
+---
 
 ### Zadanie 1B:
 **Zliczenie zaimportowanych rekordów**
@@ -74,6 +74,8 @@ Czas trwania:
 ```
 0.224s
 ```
+---
+
 ### Zadanie 1C:
 Zamienić string zawierający tagi na tablicę napisów z tagami następnie zliczyć wszystkie tagi i wszystkie różne tagi. Napisać program, który to zrobi korzystając z jednego ze sterowników.
 
@@ -89,6 +91,8 @@ Przetworzono: 6032934/6034195 rekordów.
 Wszystkie różne tagi: 42060.
 Wszystkie tagi: 17408685.
 ```
+
+---
 
 ### Zadanie 1D:
 Wyszukać w sieci dane zawierające obiekty GeoJSON. Następnie dane zapisać w bazie MongoDB.
