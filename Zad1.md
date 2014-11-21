@@ -36,15 +36,16 @@ mongoimport -d mydb -c train -type csv -file correct_train.csv --headerline
 
 **PostgreSQL**
 
-```
-SQL
+```sql
 CREATE TABLE train(
-   id TEXT PRIMARY KEY     NOT NULL,
-   Title           TEXT,
-   Body            TEXT,
-   Tags        TEXT
-);
- 
+   id TEXT PRIMARY KEY	NOT NULL,
+   Title           	TEXT,
+   Body            	TEXT,
+   Tags        		TEXT
+)
+```
+
+``` 
 copy train(Id,Title,Body,Tags) from 'C:\Train.csv' with delimiter ',' csv header
 ```
 
@@ -84,8 +85,8 @@ Zamienić string zawierający tagi na tablicę napisów z tagami następnie zlic
 Pamięć zapełniała się stopniowo by w końcu dojść do następującego poziomu "zapełnienia": 
 
 ![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1C%20ram.jpg?token=ABKxe9l7pBqISk3Hd4MrmjAhlGeHeWqjks5UdNEdwA%3D%3D)
-```
 
+```
 Przetwarzanie trwało: 58 min.
 Przetworzono: 6032934/6034195 rekordów.
 Wszystkie różne tagi: 42060.
@@ -110,7 +111,7 @@ Czas trwania:
 ```
 
 Przykładowy rekord wygląda następująco:
-```
+```js
 {
         "_id" : ObjectId("5462783c587be495784093ea"),
         "#szerokosc" : 16.785888,
@@ -120,7 +121,7 @@ Przykładowy rekord wygląda następująco:
 }
 ```
 Za pomocą [skryptu](/scripts/correctBlackPoints.js) zmieniłem je do formatu:
-```
+```js
 {
         "_id" : ObjectId("54627fc9587be49578409447"),
         "miejscowosc" : "Pobiednik Wielki",
