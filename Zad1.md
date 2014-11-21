@@ -59,7 +59,7 @@ copy train(Id,Title,Body,Tags) from 'C:\Train.csv' with delimiter ',' csv header
 
 |   Mongo  | PostgreSQL |
 |:--------:|:----------:|
-| 28 minut |     35     |
+| 28 minut |  35 minut  |
 
 
 
