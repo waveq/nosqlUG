@@ -57,9 +57,9 @@ copy train(Id,Title,Body,Tags) from 'C:\Train.csv' with delimiter ',' csv header
 ---
 ### Czas trwania importów:
 
-| Mongo | PostgreSQL |
-|:-----:|:----------:|
-|   28  |     35     |
+|   Mongo  | PostgreSQL |
+|:--------:|:----------:|
+| 28 minut |     35     |
 
 
 
