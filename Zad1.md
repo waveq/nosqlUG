@@ -28,11 +28,6 @@ Import poprawionego pliku csv:
 mongoimport -d mydb -c train -type csv -file correct_train.csv --headerline
 ```
 
-Czas trwania:
-```
-28m
-```
-
 ![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20hdd.jpg?token=ABKxe2E9CbYd4PW1a8pxbRiRPK00aNaVks5UdNC4wA%3D%3D)
 
 ![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20cpu.jpg?token=ABKxe4zbr0YkQStkTZOed7iDhhxHVbuvks5UdNDXwA%3D%3D)
@@ -53,16 +48,18 @@ CREATE TABLE train(
 copy train(Id,Title,Body,Tags) from 'C:\Train.csv' with delimiter ',' csv header
 ```
 
-Czas trwania:
-```
-35m
-```
-
 ![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20PG%20HDD.jpg?token=ABKxe0wA3HanH85e7aDdsPG4xPDfyQZ_ks5Uc6BZwA%3D%3D)
 
 ![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1a%20pg%20cpu.jpg?token=ABKxe7TBtw4M-PqUzH2QKApCy_XtjRQFks5Uc6BnwA%3D%3D)
 
 ![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1a%20pg%20ram.jpg?token=ABKxe4Faj3iNL0yF6mxqWPimiQ50YX73ks5Uc6B1wA%3D%3D)
+
+---
+### Czas trwania importów:
+
+| Mongo | PostgreSQL |
+|:-----:|:----------:|
+|   28  |     35     |
 
 
 
