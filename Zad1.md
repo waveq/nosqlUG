@@ -137,7 +137,7 @@ Za pomocą [skryptu](/scripts/correctBlackPoints.js) zmieniłem je do formatu:
 **[Polygon](/maps/polygon.geojson)**
 
 Czarne punkty między miejscowościami: Gdańsk, Olsztyn, Bydgoszcz:
-```
+```js
 var obszar = {
    "type": "Polygon",
    "coordinates": [[
@@ -176,7 +176,7 @@ db.blackpoints.find({loc: {$geoWithin: {$geometry: obszar}}}).toArray()
 **[Near](/maps/near.geojson)**
 
 Czarne punkty w promieniu 50km od Warszawy:
-```
+```js
 db.blackpoints.find({ loc: {$near: {$geometry: punkt, $maxDistance: 50000} }  }).toArray()
 [
         {
@@ -229,7 +229,7 @@ db.blackpoints.find({ loc: {$near: {$geometry: punkt, $maxDistance: 50000} }  })
 **[LineString](/maps/lineString.geojson)**
 
 Czarne punkty pomiędzy punktem w Łęgowie a Warszawą:
-```
+```js
 var linia = {
   "type": "LineString",
   "coordinates": [[18.720703, 54.137997], [21.03, 52.23]]
@@ -254,7 +254,7 @@ db.blackpoints.find({loc: {$geoIntersects: {$geometry: linia}}}).toArray()
 **[Box](/maps/box.geojson)**
 
 Czarne punkty w prostokącie między Krakowem i Lublinem:
-```
+```js
 db.blackpoints.find({
 	loc: { $geoWithin: {$box: [[ 19.95, 50.05 ], [ 22.55, 51.25 ]] } }
 	}).toArray()
@@ -354,7 +354,7 @@ db.blackpoints.find({
 
 Czarne punkty w figurze między Bydgoszczem i Lublinem z wyłączeniem Warszawy: 
 
-```
+```js
 db.blackpoints.find({loc: {$geoWithin: {$geometry: obszar}}}).toArray()
 [
         {
@@ -485,7 +485,7 @@ db.blackpoints.find({loc: {$geoWithin: {$geometry: obszar}}}).toArray()
 
 Czarne punkty w miejscowościach na literę "M", położone w promieniu 100km od Wrocławia: 
 
-```
+```js
 var wroc = {
   "type": "Point", 
   "coordinates": [17.00, 51.11],
