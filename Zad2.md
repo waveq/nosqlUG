@@ -197,4 +197,14 @@ public static void mostLikingUsers(DBCollection coll) {
 |    johnnym2001    |  11436 |
 |      bangwid      |  9237  |
 
+----
+
+### Porównanie czasów:
+
+|   | Javascript | Java  |
+|:-:|:----------:|-------|
+| 1 |    8:50    | 15:29 |
+| 2 |    11:53   | 12:22 |
+| 3 |    11:16   | 12:01 |
+| 4 |    9:25    | 12:34 |
 
