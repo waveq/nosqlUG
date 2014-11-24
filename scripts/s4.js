@@ -1,7 +1,7 @@
 var conn = new Mongo();
 var db = conn.getDB('mydb');
 var collection = 
-db.sgetglue.aggregate( 
+db.getglue.aggregate( 
 	{ $match: 
 		{ action: "Liked" }
 	},
