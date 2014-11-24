@@ -11,6 +11,8 @@ Intel Core i3-2350M
 ```
 $ mongo --version
 MongoDB shell version: 2.6.5
+
+Próbowałem również z wersją 2.8.0-rc0 i opcją --storageEngine wiredtiger, ale niestety bez sukcesów.
 ```
 ### Zadanie 1A:
 **Polega na zaimportowaniu, do systemów baz danych uruchomionych na swoim komputerze, danych z pliku Train.csv bazy MongoDB i PostgreSQL**
