@@ -201,6 +201,8 @@ public static void mostLikingUsers(DBCollection coll) {
 
 ### Porównanie czasów:
 
+![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/2%20CHART.png?token=ABKxezXQreLJK80On--EKubYC04Ndefuks5UfJGXwA%3D%3D)
+
 |   | Javascript | Java  |
 |:-:|:----------:|-------|
 | 1 |    8:50    | 15:29 |
