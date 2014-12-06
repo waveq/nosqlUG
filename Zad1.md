@@ -30,11 +30,11 @@ Import poprawionego pliku csv:
 mongoimport -d mydb -c train -type csv -file correct_train.csv --headerline
 ```
 
-![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20hdd.jpg?token=ABKxe2E9CbYd4PW1a8pxbRiRPK00aNaVks5UdNC4wA%3D%3D)
+![alt tag](https://github.com/waveq/nosqlUG/blob/master/screens/1Ahdd.jpg)
 
-![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20cpu.jpg?token=ABKxe4zbr0YkQStkTZOed7iDhhxHVbuvks5UdNDXwA%3D%3D)
+![alt tag](https://github.com/waveq/nosqlUG/blob/master/screens/1Acpu.jpg)
 
-![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20RAM.jpg?token=ABKxe36ROhz8zaisxt15IV3wLAN9Y2f5ks5UdNDkwA%3D%3D)
+![alt tag](https://github.com/waveq/nosqlUG/blob/master/screens/1ARAM.jpg)
 
 **PostgreSQL**
 
@@ -51,11 +51,11 @@ CREATE TABLE train(
 copy train(Id,Title,Body,Tags) from 'C:\Train.csv' with delimiter ',' csv header
 ```
 
-![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1A%20PG%20HDD.jpg?token=ABKxe0wA3HanH85e7aDdsPG4xPDfyQZ_ks5Uc6BZwA%3D%3D)
+![alt tag](https://github.com/waveq/nosqlUG/blob/master/screens/1APGHDD.jpg)
 
-![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1a%20pg%20cpu.jpg?token=ABKxe7TBtw4M-PqUzH2QKApCy_XtjRQFks5Uc6BnwA%3D%3D)
+![alt tag](https://github.com/waveq/nosqlUG/blob/master/screens/1apgcpu.jpg)
 
-![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1a%20pg%20ram.jpg?token=ABKxe4Faj3iNL0yF6mxqWPimiQ50YX73ks5Uc6B1wA%3D%3D)
+![alt tag](https://github.com/waveq/nosqlUG/blob/master/screens/1apgram.jpg)
 
 --
 ### Czas trwania importów:
@@ -86,7 +86,7 @@ Zamienić string zawierający tagi na tablicę napisów z tagami następnie zlic
 
 Pamięć zapełniała się stopniowo by w końcu dojść do następującego poziomu "zapełnienia": 
 
-![alt tag](https://raw.githubusercontent.com/waveq/nosqlUG/master/screens/1C%20ram.jpg?token=ABKxe9l7pBqISk3Hd4MrmjAhlGeHeWqjks5UdNEdwA%3D%3D)
+![alt tag](https://github.com/waveq/nosqlUG/blob/master/screens/1Cram.jpg)
 
 ```
 Przetwarzanie trwało: 58 min.
