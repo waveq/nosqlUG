@@ -31,8 +31,3 @@ db.words.mapReduce(
   }
 )
 ```
-
-Uruchamiamy plik z zapisanymi instrukcjami:
-```
-mongo localhost:27017/test mapreduce.js
-```
