@@ -31,3 +31,52 @@ db.words.mapReduce(
   }
 )
 ```
+
+
+### Wikipedia
+
+[Plik do pobrania](http://dumps.wikimedia.org/plwiki/latest/plwiki-latest-pages-articles-multistream.xml.bz2)
+
+By skonwertować xml do pliku csv użyłem [XML2CSVGenericConverter](http://sourceforge.net/projects/xml2csvgenericconverter/files/?source=navbar)
+
+```
+java -jar XML2CSVGenericConverter_V1.0.0.jar -v -i /nosql/wiki.xml -o /nosql/
+```
+
+Czas trwania:
+```
+34 min
+```
+
+Import pliku do bazy:
+```
+mongoimport -d wikipedia -c wikipedia --type csv --file wiki.csv --headerline --ignoreBlanks
+```
+
+Czas trwania
+```
+118 min
+```
+
+Funkcja map reduce:
+```js
+var map = function() {  
+    var id = this.id;
+    if (id) { 
+        id = id.split(";"); 
+        for (var i = id.length - 1; i >= 0; i--) {
+            if (id[i])  {    
+               emit(id[i], 1
+            }
+        }
+    }
+};
+var reduce = function( key, values ) {    
+    var count = 0;    
+    values.forEach(function(v) {            
+        count +=v;    
+    });
+    return count;
+}
+db.test.mapReduce(map, reduce, {out: "word_count"})
+```
