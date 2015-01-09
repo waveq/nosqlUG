@@ -58,7 +58,7 @@ Czas trwania
 118 min
 ```
 
-Funkcja map reduce:
+Funkcja map:
 ```js
 var map = function() {  
     var id = this.id;
@@ -71,6 +71,9 @@ var map = function() {
         }
     }
 };
+```
+Funkcja reduce:
+```js
 var reduce = function( key, values ) {    
     var count = 0;    
     values.forEach(function(v) {            
