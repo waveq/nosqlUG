@@ -80,3 +80,15 @@ var reduce = function( key, values ) {
 }
 db.test.mapReduce(map, reduce, {out: "word_count"})
 ```
+
+Czas trwania
+```
+17 godzin
+```
+
+Najczęściej występujące słowa:
+```
+{ "_id" : "w", "value" : { "count" : 13324479 } }
+{ "_id" : "i", "value" : { "count" : 5701710 } }
+{ "_id" : "align", "value" : { "count" : 4910641 } }
+```
