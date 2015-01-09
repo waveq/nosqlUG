@@ -90,7 +90,7 @@ Czas trwania
 ```
 
 Najczęściej występujące słowa:
-```
+```json
 { "_id" : "w", "value" : { "count" : 13324479 } }
 { "_id" : "i", "value" : { "count" : 5701710 } }
 { "_id" : "align", "value" : { "count" : 4910641 } }
