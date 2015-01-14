@@ -115,7 +115,7 @@ Czas trwania
 118 min
 ```
 
-Funkcja map:
+Map
 ```js
 var map = function() {
     var alpha = this.revision.text.match(/[a-ząśżźęćńół]+/gi);
@@ -126,7 +126,7 @@ var map = function() {
 };
 ```
 
-Funkcja reduce:
+Reduce
 ```js
 var reduce = function( key, values ) {    
     var count = 0;    
@@ -137,7 +137,7 @@ var reduce = function( key, values ) {
 }
 ```
 
-MapReduce:
+MapReduce
 ```js
 db.test.mapReduce(map, reduce, {out: "wordCount"})
 ```
