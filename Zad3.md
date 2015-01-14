@@ -1,6 +1,6 @@
 # Szymon Rękawek
 
-# 01.15.15r. Poprawione opisy, kod z funkcji map reduce został rozbity na kilka funkcji by był bardziej czytelny, dodany diagramik.
+# 15.01.15r. Poprawione opisy, kod z funkcji map reduce został rozbity na kilka funkcji by był bardziej czytelny, dodany diagramik.
 ----
 ### Maszyna:
 ```
