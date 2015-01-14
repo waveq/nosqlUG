@@ -25,7 +25,7 @@ Wczytanie pliku ze słowami:
 mongoimport -c words --type csv --file word_list.txt -f "word"
 ```
 
-Map:
+**Map**
 ```js
 map = function()
 {
@@ -34,7 +34,7 @@ map = function()
 };
 ```
 
-Reduce
+**Reduce**
 ```js
 reduce = function(key, values) 
 {
@@ -46,7 +46,8 @@ reduce = function(key, values)
     return result;
 };
 ```
-Finalize
+
+**Finalize**
 ```js
 finalize = function(key, values) 
 {
@@ -55,7 +56,7 @@ finalize = function(key, values)
 };
 ```
 
-MapReduce
+**MapReduce**
 ```js
 db.words.mapReduce(
     map,
@@ -67,7 +68,7 @@ db.words.mapReduce(
 );
 ```
 
-Przykładowe anagramy:
+**Przykładowe anagramy**
 ```sh
 {"_id":"aabdor","value":{"anagramsList":["abroad","aboard"],"count":2}}
 {"_id":"aablst","value":{"anagramsList":["basalt","tablas"],"count":2}}
@@ -110,12 +111,12 @@ Import pliku do bazy:
 mongoimport -d wikipedia -c wikipedia --type csv --file wiki.csv --headerline --ignoreBlanks
 ```
 
-Czas trwania
+Czas trwania:
 ```
 118 min
 ```
 
-Map
+**Map**
 ```js
 var map = function() {
     var alpha = this.revision.text.match(/[a-ząśżźęćńół]+/gi);
@@ -126,7 +127,7 @@ var map = function() {
 };
 ```
 
-Reduce
+**Reduce**
 ```js
 var reduce = function( key, values ) {    
     var count = 0;    
@@ -137,7 +138,7 @@ var reduce = function( key, values ) {
 }
 ```
 
-MapReduce
+**MapReduce**
 ```js
 db.test.mapReduce(map, reduce, {out: "wordCount"})
 ```
