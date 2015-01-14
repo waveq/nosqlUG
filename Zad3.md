@@ -13,27 +13,82 @@ $ mongo --version
 MongoDB shell version: 2.8.0-rc0
 ```
 
-### MapReduce
+### 3.A
+Przygotować funkcje map i reduce, które:
+wyszukają wszystkie anagramy w pliku [word_list.txt](http://wbzyl.inf.ug.edu.pl/nosql/doc/data/word_list.txt)
+
 
 Wczytanie pliku ze słowami:
 ```
 mongoimport -c words --type csv --file word_list.txt -f "word"
 ```
 
-Funkcja map reduce:
+Map:
+```js
+map = function()
+{
+    var splitWords = this.word.split("").sort().join("");
+    emit(splitWords, this.word);
+};
+```
+
+Reduce
+```js
+reduce = function(key, values) 
+{
+    result = 
+    {
+        "anagrams1": values,
+        "count": values.length
+    };
+    return result;
+};
+```
+Finalize
+```js
+finalize = function(key, values) 
+{
+    if (values.count >= 1)
+        return values;
+};
+```
+
+MapReduce
 ```js
 db.words.mapReduce(
-  function(){emit(Array.sum(this.word.split("").sort()), this.word);},
-  function(key, values) {return values.toString()},
-  {
-    query: {},
-    out: "anagramy"
-  }
-)
+    map,
+    reduce, {
+        out: "anagrams1",
+        finalize: finalize
+ 
+    }
+);
+```
+
+Przykładowe anagramy:
+```sh
+{"_id":"aabdor","value":{"anagramsList":["abroad","aboard"],"count":2}}
+{"_id":"aablst","value":{"anagramsList":["basalt","tablas"],"count":2}}
+{"_id":"aabmnt","value":{"anagramsList":["bantam","batman"],"count":2}}
+{"_id":"aacetv","value":{"anagramsList":["caveat","vacate"],"count":2}}
+{"_id":"aacimn","value":{"anagramsList":["caiman","maniac"],"count":2}}
+{"_id":"aaclrs","value":{"anagramsList":["rascal","scalar"],"count":2}}
+{"_id":"aaclsu","value":{"anagramsList":["casual","causal"],"count":2}}
+{"_id":"aadmrs","value":{"anagramsList":["madras","dramas"],"count":2}}
+{"_id":"aaffir","value":{"anagramsList":["affair","raffia"],"count":2}}
 ```
 
 
-### Wikipedia
+Plik ze wszystkimi anagramami: 
+
+
+
+
+
+
+### 3.B 
+Przygotować funkcje map i reduce, które:
+wyszukają najczęściej występujące słowa z Wikipedia data PL.
 
 [Plik do pobrania](http://dumps.wikimedia.org/plwiki/latest/plwiki-latest-pages-articles-multistream.xml.bz2)
 
@@ -60,18 +115,15 @@ Czas trwania
 
 Funkcja map:
 ```js
-var map = function() {  
-    var id = this.id;
-    if (id) { 
-        id = id.split(";"); 
-        for (var i = id.length - 1; i >= 0; i--) {
-            if (id[i])  {    
-               emit(id[i], 1
-            }
-        }
+var map = function() {
+    var alpha = this.revision.text.match(/[a-ząśżźęćńół]+/gi);
+    if (alpha) {
+        for (var i = 0; i < alpha.length; i++)
+            emit(alpha[i], 1)
     }
 };
 ```
+
 Funkcja reduce:
 ```js
 var reduce = function( key, values ) {    
@@ -81,17 +133,22 @@ var reduce = function( key, values ) {
     });
     return count;
 }
-db.test.mapReduce(map, reduce, {out: "word_count"})
 ```
+
+MapReduce:
+```js
+db.test.mapReduce(map, reduce, {out: "wordCount"})
+```
+
 
 Czas trwania
 ```
-17 godzin
+Za pierwszym razem: 17 godzin, za drugim razem 14 godzin - pewnie dlatego, że za pierwszym razem próbowałem komputera używać również do innych celów.
 ```
 
 Najczęściej występujące słowa:
 ```json
-{ "_id" : "w", "value" : { "count" : 13324479 } }
-{ "_id" : "i", "value" : { "count" : 5701710 } }
-{ "_id" : "align", "value" : { "count" : 4910641 } }
+{ "_id" : "w", "value" : { "count" : 20292468  } }
+{ "_id" : "i", "value" : { "count" : 5780516  } }
+{ "_id" : "a", "value" : { "count" : 5407771  } }
 ```
