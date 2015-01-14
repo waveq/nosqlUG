@@ -79,7 +79,7 @@ Przykładowe anagramy:
 ```
 
 
-Plik ze wszystkimi anagramami: 
+[Plik z anagramami](/things/myAnagramList.json)
 
 
 
@@ -152,3 +152,7 @@ Najczęściej występujące słowa:
 { "_id" : "i", "value" : { "count" : 5780516  } }
 { "_id" : "a", "value" : { "count" : 5407771  } }
 ```
+
+![alt tag](https://github.com/waveq/nosqlUG/blob/master/screens/chart3b.png)
+
+Jak widać druzgocąco zwycięża słowo 'w', cóż to za niespodziewany zwrot akcji!
