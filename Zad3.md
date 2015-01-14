@@ -143,10 +143,8 @@ db.test.mapReduce(map, reduce, {out: "wordCount"})
 ```
 
 
-Czas trwania
-```
-Za pierwszym razem: 17 godzin, za drugim razem 14 godzin - pewnie dlatego, że za pierwszym razem próbowałem komputera używać również do innych celów.
-```
+**Czas trwania:** za pierwszym razem: **17 godzin**, za drugim razem **14 godzin** - pewnie dlatego, że za pierwszym razem próbowałem komputera używać również do innych celów.
+
 
 Najczęściej występujące słowa:
 ```json
