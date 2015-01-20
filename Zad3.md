@@ -193,7 +193,7 @@ Około 17 godzin.
 ```
 
 
-Najczęściej występujące słowa:
+Najczęściej występujące słowa w tekście:
 ```json
 { "_id" : "w", "value" : 13324479 }
 { "_id" : "i", "value" : 5701710 }
