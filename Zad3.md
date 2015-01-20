@@ -25,6 +25,14 @@ Wczytanie pliku ze słowami:
 mongoimport -c words --type csv --file word_list.txt -f "word"
 ```
 
+Czas:
+```
+real    0m0.944s
+user    0m0.000s
+sys     0m0.052s
+```
+
+
 **Map**
 ```js
 map = function()
