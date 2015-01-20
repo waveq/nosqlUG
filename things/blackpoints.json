@@ -1,0 +1,84 @@
+{"_id":{"$oid":"54627fc8587be4957840943e"},"loc":{"coordinates":[16.785888,50.958284],"type":"Point"},"miejscowosc":"Mirosławice"}
+{"_id":{"$oid":"54627fc9587be4957840943f"},"loc":{"coordinates":[21.627526,52.08769],"type":"Point"},"miejscowosc":"Stara Wieś"}
+{"_id":{"$oid":"54627fc9587be49578409440"},"loc":{"coordinates":[19.224011,50.445988],"type":"Point"},"miejscowosc":"Tuliszów"}
+{"_id":{"$oid":"54627fc9587be49578409441"},"loc":{"coordinates":[19.978632,50.164962],"type":"Point"},"miejscowosc":"Michałowice"}
+{"_id":{"$oid":"54627fc9587be49578409442"},"loc":{"coordinates":[20.535043,52.202243],"type":"Point"},"miejscowosc":"Nowa Wieś"}
+{"_id":{"$oid":"54627fc9587be49578409443"},"loc":{"coordinates":[19.160442,50.589822],"type":"Point"},"miejscowosc":"Koziegłowy"}
+{"_id":{"$oid":"54627fc9587be49578409444"},"loc":{"coordinates":[18.692253,50.315273],"type":"Point"},"miejscowosc":"Szobiszowice"}
+{"_id":{"$oid":"54627fc9587be49578409445"},"loc":{"coordinates":[18.730291,50.308653],"type":"Point"},"miejscowosc":"Zabrze"}
+{"_id":{"$oid":"54627fc9587be49578409446"},"loc":{"coordinates":[20.349453,53.394801],"type":"Point"},"miejscowosc":"Załuski"}
+{"_id":{"$oid":"54627fc9587be49578409447"},"loc":{"coordinates":[20.193543,50.081929],"type":"Point"},"miejscowosc":"Pobiednik Wielki"}
+{"_id":{"$oid":"54627fc9587be49578409448"},"loc":{"coordinates":[20.208933,50.083553],"type":"Point"},"miejscowosc":"Pobiednik Wielki"}
+{"_id":{"$oid":"54627fc9587be49578409449"},"loc":{"coordinates":[15.52042,51.952782],"type":"Point"},"miejscowosc":"Zielona Góra"}
+{"_id":{"$oid":"54627fc9587be4957840944a"},"loc":{"coordinates":[19.460632,49.877291],"type":"Point"},"miejscowosc":"Chocznia"}
+{"_id":{"$oid":"54627fc9587be4957840944b"},"loc":{"coordinates":[19.468466,49.880842],"type":"Point"},"miejscowosc":"Chocznia"}
+{"_id":{"$oid":"54627fc9587be4957840944c"},"loc":{"coordinates":[19.311982,49.865581],"type":"Point"},"miejscowosc":"Andrychów"}
+{"_id":{"$oid":"54627fc9587be4957840944d"},"loc":{"coordinates":[16.487458,52.660246],"type":"Point"},"miejscowosc":"Pęckowo"}
+{"_id":{"$oid":"54627fc9587be4957840944e"},"loc":{"coordinates":[16.244857,52.500176],"type":"Point"},"miejscowosc":"Pniewy"}
+{"_id":{"$oid":"54627fc9587be4957840944f"},"loc":{"coordinates":[17.20947,50.99181],"type":"Point"},"miejscowosc":"Marcinkowice"}
+{"_id":{"$oid":"54627fc9587be49578409450"},"loc":{"coordinates":[15.518746,53.760382],"type":"Point"},"miejscowosc":"Sosnówko-Łagiewniki"}
+{"_id":{"$oid":"54627fc9587be49578409451"},"loc":{"coordinates":[20.354254,53.391646],"type":"Point"},"miejscowosc":"Nidzica"}
+{"_id":{"$oid":"54627fc9587be49578409452"},"loc":{"coordinates":[15.701147,51.854548],"type":"Point"},"miejscowosc":"Otyń"}
+{"_id":{"$oid":"54627fc9587be49578409453"},"loc":{"coordinates":[20.6403,49.715555],"type":"Point"},"miejscowosc":"Tęgoborze"}
+{"_id":{"$oid":"54627fc9587be49578409454"},"loc":{"coordinates":[14.784765,53.326567],"type":"Point"},"miejscowosc":"Szczecin"}
+{"_id":{"$oid":"54627fc9587be49578409455"},"loc":{"coordinates":[22.734167,51.304728],"type":"Point"},"miejscowosc":"Łuszczów"}
+{"_id":{"$oid":"54627fc9587be49578409456"},"loc":{"coordinates":[22.863777,52.42722],"type":"Point"},"miejscowosc":"Siemiatycze"}
+{"_id":{"$oid":"54627fc9587be49578409457"},"loc":{"coordinates":[15.370146,51.065396],"type":"Point"},"miejscowosc":"olszyna"}
+{"_id":{"$oid":"54627fc9587be49578409458"},"loc":{"coordinates":[21.082645,52.410921],"type":"Point"},"miejscowosc":"Wólka Radzymińska"}
+{"_id":{"$oid":"54627fc9587be49578409459"},"loc":{"coordinates":[23.205313,53.198552],"type":"Point"},"miejscowosc":"Wasilków"}
+{"_id":{"$oid":"54627fc9587be4957840945a"},"loc":{"coordinates":[22.45909,51.218987],"type":"Point"},"miejscowosc":"Lublin"}
+{"_id":{"$oid":"54627fc9587be4957840945b"},"loc":{"coordinates":[18.598909,53.159663],"type":"Point"},"miejscowosc":"Grzywna"}
+{"_id":{"$oid":"54627fc9587be4957840945c"},"loc":{"coordinates":[15.393165,51.03744],"type":"Point"},"miejscowosc":"Gryfów Śląski"}
+{"_id":{"$oid":"54627fc9587be4957840945d"},"loc":{"coordinates":[16.440578,54.27781],"type":"Point"},"miejscowosc":"Pękanino"}
+{"_id":{"$oid":"54627fc9587be4957840945e"},"loc":{"coordinates":[18.721196,52.907316],"type":"Point"},"miejscowosc":"Otłoczyn"}
+{"_id":{"$oid":"54627fc9587be4957840945f"},"loc":{"coordinates":[19.345207,52.876311],"type":"Point"},"miejscowosc":"Skępe"}
+{"_id":{"$oid":"54627fc9587be49578409460"},"loc":{"coordinates":[18.335258,53.932853],"type":"Point"},"miejscowosc":"Zblewo"}
+{"_id":{"$oid":"54627fc9587be49578409461"},"loc":{"coordinates":[18.639603,54.227259],"type":"Point"},"miejscowosc":"Łęgowo"}
+{"_id":{"$oid":"54627fc9587be49578409462"},"loc":{"coordinates":[19.354562,54.166315],"type":"Point"},"miejscowosc":"Kazimierzowo"}
+{"_id":{"$oid":"54627fc9587be49578409463"},"loc":{"coordinates":[18.720703,54.137997],"type":"Point"},"miejscowosc":"Miłobądz"}
+{"_id":{"$oid":"54627fc9587be49578409464"},"loc":{"coordinates":[18.13906,54.221326],"type":"Point"},"miejscowosc":"Rybaki"}
+{"_id":{"$oid":"54627fc9587be49578409465"},"loc":{"coordinates":[18.170936,54.225465],"type":"Point"},"miejscowosc":"Starkowa Huta"}
+{"_id":{"$oid":"54627fc9587be49578409466"},"loc":{"coordinates":[19.34319,54.137098],"type":"Point"},"miejscowosc":"Elbląg"}
+{"_id":{"$oid":"54627fc9587be49578409467"},"loc":{"coordinates":[19.446465,54.217248],"type":"Point"},"miejscowosc":"Elbląg"}
+{"_id":{"$oid":"54627fc9587be49578409468"},"loc":{"coordinates":[16.759236,53.043509],"type":"Point"},"miejscowosc":"Chrustowo"}
+{"_id":{"$oid":"54627fc9587be49578409469"},"loc":{"coordinates":[18.187733,51.147833],"type":"Point"},"miejscowosc":"Gołkowice"}
+{"_id":{"$oid":"54627fc9587be4957840946a"},"loc":{"coordinates":[19.204874,50.494033],"type":"Point"},"miejscowosc":"Siewierz"}
+{"_id":{"$oid":"54627fc9587be4957840946b"},"loc":{"coordinates":[18.446399,50.712038],"type":"Point"},"miejscowosc":"Dobrodzień"}
+{"_id":{"$oid":"54627fc9587be4957840946c"},"loc":{"coordinates":[18.443935,50.734888],"type":"Point"},"miejscowosc":"Dobrodzień"}
+{"_id":{"$oid":"54627fc9587be4957840946d"},"loc":{"coordinates":[18.437837,50.751418],"type":"Point"},"miejscowosc":"Dobrodzień"}
+{"_id":{"$oid":"54627fc9587be4957840946e"},"loc":{"coordinates":[18.167439,51.157674],"type":"Point"},"miejscowosc":"Kostów"}
+{"_id":{"$oid":"54627fc9587be4957840946f"},"loc":{"coordinates":[14.482412,53.200331],"type":"Point"},"miejscowosc":"Nowe Czarnowo"}
+{"_id":{"$oid":"54627fc9587be49578409470"},"loc":{"coordinates":[18.920517,52.716669],"type":"Point"},"miejscowosc":"Włocławek"}
+{"_id":{"$oid":"54627fc9587be49578409471"},"loc":{"coordinates":[19.316733,51.954587],"type":"Point"},"miejscowosc":"Ozorków"}
+{"_id":{"$oid":"54627fc9587be49578409472"},"loc":{"coordinates":[18.716669,52.913949],"type":"Point"},"miejscowosc":"Otłoszyn"}
+{"_id":{"$oid":"54627fc9587be49578409473"},"loc":{"coordinates":[18.564813,53.187329],"type":"Point"},"miejscowosc":"Chełmża"}
+{"_id":{"$oid":"54627fc9587be49578409474"},"loc":{"coordinates":[14.780387,53.329437],"type":"Point"},"miejscowosc":"Szczecin"}
+{"_id":{"$oid":"54627fc9587be49578409475"},"loc":{"coordinates":[18.800171,50.188611],"type":"Point"},"miejscowosc":"Bujaków"}
+{"_id":{"$oid":"54627fc9587be49578409476"},"loc":{"coordinates":[18.934872,53.307467],"type":"Point"},"miejscowosc":"Plebanka"}
+{"_id":{"$oid":"54627fc9587be49578409477"},"loc":{"coordinates":[20.551673,52.201294],"type":"Point"},"miejscowosc":"Nowa Wieś"}
+{"_id":{"$oid":"54627fc9587be49578409478"},"loc":{"coordinates":[19.798092,51.382634],"type":"Point"},"miejscowosc":"Przygłow"}
+{"_id":{"$oid":"54627fc9587be49578409479"},"loc":{"coordinates":[19.830923,51.37163],"type":"Point"},"miejscowosc":"Włodzimierzów"}
+{"_id":{"$oid":"54627fc9587be4957840947a"},"loc":{"coordinates":[21.36305,49.741497],"type":"Point"},"miejscowosc":"Siedliska Sławęckie"}
+{"_id":{"$oid":"54627fc9587be4957840947b"},"loc":{"coordinates":[22.40408,51.15494],"type":"Point"},"miejscowosc":"Strzeszkowice"}
+{"_id":{"$oid":"54627fc9587be4957840947c"},"loc":{"coordinates":[15.34106,52.66483],"type":"Point"},"miejscowosc":"Deszczno"}
+{"_id":{"$oid":"54627fc9587be4957840947d"},"loc":{"coordinates":[18.64253,50.71421],"type":"Point"},"miejscowosc":"Glinica"}
+{"_id":{"$oid":"54627fc9587be4957840947e"},"loc":{"coordinates":[20.29134,50.62867],"type":"Point"},"miejscowosc":"Jędrzejów"}
+{"_id":{"$oid":"54627fc9587be4957840947f"},"loc":{"coordinates":[23.39041,50.55347],"type":"Point"},"miejscowosc":"Sumin"}
+{"_id":{"$oid":"54627fc9587be49578409480"},"loc":{"coordinates":[22.4461,51.29703],"type":"Point"},"miejscowosc":"Jastków"}
+{"_id":{"$oid":"54627fc9587be49578409481"},"loc":{"coordinates":[22.30439,51.3623],"type":"Point"},"miejscowosc":"Garbów"}
+{"_id":{"$oid":"54627fc9587be49578409482"},"loc":{"coordinates":[22.07312,51.4949],"type":"Point"},"miejscowosc":"Życzyn"}
+{"_id":{"$oid":"54627fc9587be49578409483"},"loc":{"coordinates":[20.70974,50.95562],"type":"Point"},"miejscowosc":"Barcza"}
+{"_id":{"$oid":"54627fc9587be49578409484"},"loc":{"coordinates":[20.7621,50.98183],"type":"Point"},"miejscowosc":"Gózd"}
+{"_id":{"$oid":"54627fc9587be49578409485"},"loc":{"coordinates":[16.677787,52.459045],"type":"Point"},"miejscowosc":"Tarnowo Podgórne"}
+{"_id":{"$oid":"54627fc9587be49578409486"},"loc":{"coordinates":[21.87328,49.575281],"type":"Point"},"miejscowosc":"Rymanów"}
+{"_id":{"$oid":"54627fc9587be49578409487"},"loc":{"coordinates":[21.863275,49.577387],"type":"Point"},"miejscowosc":"Rymanów"}
+{"_id":{"$oid":"54627fc9587be49578409488"},"loc":{"coordinates":[21.777738,49.665485],"type":"Point"},"miejscowosc":"Krosno"}
+{"_id":{"$oid":"54627fc9587be49578409489"},"loc":{"coordinates":[21.776308,49.66937],"type":"Point"},"miejscowosc":"Krosno"}
+{"_id":{"$oid":"54627fc9587be4957840948a"},"loc":{"coordinates":[21.602417,49.759203],"type":"Point"},"miejscowosc":"Szebnie"}
+{"_id":{"$oid":"54627fc9587be4957840948b"},"loc":{"coordinates":[21.587026,49.761821],"type":"Point"},"miejscowosc":"Szebnie"}
+{"_id":{"$oid":"54627fc9587be4957840948c"},"loc":{"coordinates":[20.648505,49.706973],"type":"Point"},"miejscowosc":"Tęgoborze"}
+{"_id":{"$oid":"54627fc9587be4957840948d"},"loc":{"coordinates":[21.071992,50.008704],"type":"Point"},"miejscowosc":"ŁADNA"}
+{"_id":{"$oid":"54627fc9587be4957840948e"},"loc":{"coordinates":[17.233743,50.977669],"type":"Point"},"miejscowosc":"Marcinkowice"}
+{"_id":{"$oid":"54627fc9587be4957840948f"},"loc":{"coordinates":[16.118188,52.396658],"type":"Point"},"miejscowosc":"Miedzychod"}
+{"_id":{"$oid":"54627fc9587be49578409490"},"loc":{"coordinates":[19.766548,52.73497],"type":"Point"},"miejscowosc":"Lelice"}
+{"_id":{"$oid":"54627fc9587be49578409491"},"loc":{"coordinates":[19.765761,52.740047],"type":"Point"},"miejscowosc":"Lelice"}
