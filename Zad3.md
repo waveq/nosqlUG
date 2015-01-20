@@ -1,11 +1,8 @@
 # Szymon Rękawek
 
-# 15.01.15r. 
-- Poprawione opisy 
-- Kod z funkcji map reduce został rozbity na kilka funkcji by był bardziej czytelny.
-
 # 20.01.15r.
-- Poprawione (jeszcze bardziej) opisy
+- Poprawione opisy
+- Kod z funkcji map reduce został rozbity na kilka funkcji by był bardziej czytelny.
 - Dodane diagramy 
 - Dodane najczęściej występujące słowa w tytułach na wikipedii(3B.1)
 - Dodana funkcja map reduce na mojej kolekcji z czarnymi punktami na polskich drogach
