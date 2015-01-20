@@ -34,7 +34,7 @@ Najczęściej występujące słowa w tytułach artykułów:
 
 **Map**
 ```js
-map = function()
+var map = function()
 {
     var splitWords = this.word.split("").sort().join("");
     emit(splitWords, this.word);
@@ -43,7 +43,7 @@ map = function()
 
 **Reduce**
 ```js
-reduce = function(key, values) 
+var reduce = function(key, values) 
 {
     result = 
     {
@@ -56,7 +56,7 @@ reduce = function(key, values)
 
 **Finalize**
 ```js
-finalize = function(key, values) 
+var finalize = function(key, values) 
 {
     if (values.count >= 1)
         return values;
