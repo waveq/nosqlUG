@@ -235,8 +235,7 @@ Jak widać druzgocąco zwycięża słowo 'w', cóż to za niespodziewany zwrot a
 
 **Map**
 ```js
-var map = function()
-{
+var map = function() {
 	var first = this.miejscowosc.charAt(0);
     emit(first, 1);
 }
