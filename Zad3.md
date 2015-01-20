@@ -133,7 +133,7 @@ var reduce = function(key, values) {
 
 **MapReduce**
 ```js
-db.test.mapReduce(map, reduce, {out: "titleCount"});
+db.pages.mapReduce(map, reduce, {out: "titleCount"});
 ```
 Czas trwania:
 ```
@@ -184,7 +184,7 @@ var reduce = function(key, values) {
 
 **MapReduce**
 ```js
-db.test.mapReduce(map, reduce, {out: "wordCount"});
+db.pages.mapReduce(map, reduce, {out: "wordCount"});
 ```
 
 Czas trwania:
