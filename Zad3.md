@@ -150,7 +150,7 @@ Czas trwania:
 real    32m41.581s
 ```
 
-Najczęstrze słowa w tytułach artykułów:
+**Najczęstrze słowa w tytułach artykułów**
 ```JSON
 { "_id": "Kategoria", "value": 140494 } 
 { "_id": "w", "value": 118729 } 
@@ -203,7 +203,7 @@ Około 17 godzin.
 ```
 
 
-Najczęściej występujące słowa w tekście:
+**Najczęściej występujące słowa w tekście**
 ```json
 { "_id" : "w", "value" : 13324479 }
 { "_id" : "i", "value" : 5701710 }
