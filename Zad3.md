@@ -6,7 +6,7 @@
 ```
 Windows 8.1 x64
 Intel Core i3-2350M 
-8 GB RAM
+8 GB RAM DDR3
 ```
 
 ### Mongo:
