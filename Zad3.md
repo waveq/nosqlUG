@@ -10,8 +10,8 @@
 - Dodane najczęściej występujące słowa w tytułach na wikipedii(3B.1)
 - Dodana funkcja map reduce na mojej kolekcji z czarnymi punktami na polskich drogach
 
-
 ----
+
 ### Maszyna:
 ```
 Windows 8.1 x64
@@ -166,7 +166,7 @@ real    32m41.581s
 
 ![alt tag](https://github.com/waveq/nosqlUG/blob/master/screens/chart3b1.png)
 
-===
+----
 
 ### 3.B.2 Najczęściej występujące słowa w tekście
 
@@ -230,6 +230,8 @@ Około 17 godzin.
 ![alt tag](https://github.com/waveq/nosqlUG/blob/master/screens/chart3b2.png)
 
 Jak widać druzgocąco zwycięża słowo 'w', cóż to za niespodziewany zwrot akcji!
+
+----
 
 ### 3.B.3 W miejscowościach na jaką literkę najczęściej występują [czarne punkty drogowe](/things/blackpoints.json)
 
