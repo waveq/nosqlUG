@@ -103,7 +103,7 @@ wyszukają najczęściej występujące słowa z Wikipedia data PL.
 
 [Plik do pobrania](http://dumps.wikimedia.org/plwiki/latest/plwiki-latest-pages-articles-multistream.xml.bz2)
 
-By skonwertować xml do pliku csv użyłem [XML2CSVGenericConverter](http://sourceforge.net/projects/xml2csvgenericconverter/files/?source=navbar)
+By zaimportować plik do bazy wykorzystałem  [skrypt.php](/scripts/3B.php) [XML2CSVGenericConverter](http://sourceforge.net/projects/xml2csvgenericconverter/files/?source=navbar)
 
 ```
 java -jar XML2CSVGenericConverter_V1.0.0.jar -v -i /nosql/wiki.xml -o /nosql/
