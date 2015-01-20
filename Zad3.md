@@ -25,17 +25,16 @@ Wczytanie pliku ze słowami:
 mongoimport -c words --type csv --file word_list.txt -f "word"
 ```
 
-Czas:
+Czas trwania:
 ```
 real    0m0.944s
-user    0m0.000s
-sys     0m0.052s
 ```
 
+Najczęściej występujące słowa w tytułach artykułów:
 
 **Map**
 ```js
-map = function()
+var map = function()
 {
     var splitWords = this.word.split("").sort().join("");
     emit(splitWords, this.word);
@@ -44,7 +43,7 @@ map = function()
 
 **Reduce**
 ```js
-reduce = function(key, values) 
+var reduce = function(key, values) 
 {
     result = 
     {
@@ -57,7 +56,7 @@ reduce = function(key, values)
 
 **Finalize**
 ```js
-finalize = function(key, values) 
+var finalize = function(key, values) 
 {
     if (values.count >= 1)
         return values;
@@ -89,13 +88,9 @@ db.words.mapReduce(
 {"_id":"aaffir","value":{"anagramsList":["affair","raffia"],"count":2}}
 ```
 
-
 [Plik z anagramami](/things/myAnagramList.json)
 
-
-
-
-
+----
 
 ### 3.B 
 Przygotować funkcje map i reduce, które:
@@ -109,9 +104,61 @@ By zaimportować plik do bazy wykorzystałem  [skrypt.php](/scripts/3B.php)
 Czas trwania:
 ```
 real    92m23.729s
-user    0m0.000s
-sys     0m0.053s
 ```
+
+
+### 3.B.1 Najczęściej występujące słowa w tytułach artykułów
+
+**Map**
+```js
+var map = function() {
+  var alpha = this.title.match(/[a-ząśżźęćńół]+/gi);
+  if (alpha) {
+    for (alpha i = 0; i < alpha.length; i++)
+      emit(alpha[i], 1)
+  }
+};
+```
+
+**Reduce**
+```js
+var reduce = function(key, values) {
+  var count = 0;
+  values.forEach(function(v) {
+    count += v;
+  }
+  return count;
+};
+```
+
+**MapReduce**
+```js
+db.pages.mapReduce(map, reduce, {out: "titleCount"});
+```
+Czas trwania:
+```
+real    32m41.581s
+```
+
+Najczęstrze słowa w tytułach artykułów:
+```JSON
+{ "_id": "Kategoria", "value": 140494 } 
+{ "_id": "w", "value": 118729 } 
+{ "_id": "Szablon", "value": 49402 } 
+{ "_id": "Wikipedia", "value": 41634 } 
+{ "_id": "na", "value": 35152 } 
+{ "_id": "powiat", "value": 21085 } 
+{ "_id": "województwo", "value": 18952 } 
+{ "_id": "i", "value": 18419} 
+{ "_id": "Gmina", "value": 15672} 
+{ "_id": "Poczekalnia", "value": 14943}
+```
+
+![alt tag](https://github.com/waveq/nosqlUG/blob/master/screens/chart3b1.png)
+
+===
+
+### 3.B.2 Najczęściej występujące słowa w tekście
 
 **Map**
 ```js
@@ -126,7 +173,7 @@ var map = function() {
 
 **Reduce**
 ```js
-var reduce = function( key, values ) {    
+var reduce = function(key, values) {    
     var count = 0;    
     values.forEach(function(v) {            
         count +=v;    
@@ -137,21 +184,39 @@ var reduce = function( key, values ) {
 
 **MapReduce**
 ```js
-db.test.mapReduce(map, reduce, {out: "wordCount"})
+db.pages.mapReduce(map, reduce, {out: "wordCount"});
+```
+
+Czas trwania:
+```
+Około 17 godzin.
 ```
 
 
-### Czas trwania
-Za pierwszym razem: **17 godzin**, za drugim razem **14 godzin** - pewnie dlatego, że za pierwszym razem próbowałem komputera używać również do innych celów.
-
-
-Najczęściej występujące słowa:
+Najczęściej występujące słowa w tekście:
 ```json
-{ "_id" : "w", "value" : { "count" : 20292468  } }
-{ "_id" : "i", "value" : { "count" : 5780516  } }
-{ "_id" : "a", "value" : { "count" : 5407771  } }
+{ "_id" : "w", "value" : 13324479 }
+{ "_id" : "i", "value" : 5701710 }
+{ "_id" : "align", "value" : 4910641 }
+{ "_id" : "na", "value" : 4495496 }
+{ "_id" : "z", "value" : 4420915 }
+{ "_id" : "ref", "value" : 4264256 }
+{ "_id" : "data", "value" : 3495165 }
+{ "_id" : "Kategoria", "value" : 3169267 }
+{ "_id" : "do", "value" : 2824854 }
+{ "_id" : "center", "value" : 2719355 }
+{ "_id" : "się", "value" : 2572812 }
+{ "_id" : "http", "value" : 2324495 }
+{ "_id" : "br", "value" : 2221883 }
+{ "_id" : "W", "value" : 2092043 }
+{ "_id" : "www", "value" : 2053473 }
+{ "_id" : "left", "value" : 2038389 }
+{ "_id" : "tytuł", "value" : 1668414 }
+{ "_id" : "a", "value" : 1552049 }
+{ "_id" : "roku", "value" : 1512300 }
+{ "_id" : "small", "value" : 1466686 }
 ```
 
-![alt tag](https://github.com/waveq/nosqlUG/blob/master/screens/chart3b.png)
+![alt tag](https://github.com/waveq/nosqlUG/blob/master/screens/chart3b2.png)
 
 Jak widać druzgocąco zwycięża słowo 'w', cóż to za niespodziewany zwrot akcji!
