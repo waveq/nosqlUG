@@ -5,7 +5,7 @@
 - Kod z funkcji map reduce został rozbity na kilka funkcji by był bardziej czytelny.
 - Dodane diagramy 
 - Dodane najczęściej występujące słowa w tytułach na wikipedii(3.B.1)
-- Dodana funkcja map reduce na mojej kolekcji z czarnymi punktami na polskich drogach(3.B.3
+- Dodana funkcja map reduce na mojej kolekcji z czarnymi punktami na polskich drogach(3.B.3)
 
 ----
 
