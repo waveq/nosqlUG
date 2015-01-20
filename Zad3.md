@@ -1,6 +1,16 @@
 # Szymon Rękawek
 
-# 15.01.15r. Poprawione opisy, kod z funkcji map reduce został rozbity na kilka funkcji by był bardziej czytelny, dodany diagramik.
+# 15.01.15r. 
+- Poprawione opisy 
+- Kod z funkcji map reduce został rozbity na kilka funkcji by był bardziej czytelny.
+
+# 20.01.15r.
+- Poprawione (jeszcze bardziej) opisy
+- Dodane diagramy 
+- Dodane najczęściej występujące słowa w tytułach na wikipedii(3B.1)
+- Dodana funkcja map reduce na mojej kolekcji z czarnymi punktami na polskich drogach
+
+
 ----
 ### Maszyna:
 ```
@@ -126,7 +136,7 @@ var reduce = function(key, values) {
   var count = 0;
   values.forEach(function(v) {
     count += v;
-  }
+  });
   return count;
 };
 ```
@@ -220,3 +230,58 @@ Najczęściej występujące słowa w tekście:
 ![alt tag](https://github.com/waveq/nosqlUG/blob/master/screens/chart3b2.png)
 
 Jak widać druzgocąco zwycięża słowo 'w', cóż to za niespodziewany zwrot akcji!
+
+### 3.B.3 W miejscowościach na jaką literkę najczęściej występują [czarne punkty drogowe](/things/blackpoints.json)
+
+
+**Map**
+```js
+var map = function()
+{
+	var first = this.miejscowosc.charAt(0);
+    emit(first, 1);
+}
+```
+
+**Reduce**
+```js
+var reduce = function(key, values) {
+  var count = 0;
+  values.forEach(function(v) {
+    count += v;
+  });
+  return count;
+};
+```
+
+**MapReduce**
+```js
+db.blackpoints.mapReduce(map, reduce, {out: "cityCount"});
+```
+
+```JSON
+{ "_id" : "S", "value" : 14 }
+{ "_id" : "P", "value" : 7 }
+{ "_id" : "G", "value" : 6 }
+{ "_id" : "M", "value" : 6 }
+{ "_id" : "K", "value" : 5 }
+{ "_id" : "C", "value" : 4 }
+{ "_id" : "D", "value" : 4 }
+{ "_id" : "N", "value" : 4 }
+{ "_id" : "O", "value" : 4 }
+{ "_id" : "T", "value" : 4 }
+{ "_id" : "W", "value" : 4 }
+{ "_id" : "Z", "value" : 4 }
+{ "_id" : "L", "value" : 3 }
+{ "_id" : "R", "value" : 3 }
+{ "_id" : "Ł", "value" : 3 }
+{ "_id" : "B", "value" : 2 }
+{ "_id" : "E", "value" : 2 }
+{ "_id" : "J", "value" : 2 }
+{ "_id" : "A", "value" : 1 }
+```
+
+![alt tag](https://github.com/waveq/nosqlUG/blob/master/screens/chart3b3.png)
+
+
+Radzę omijać miejscowości na literkę S.
