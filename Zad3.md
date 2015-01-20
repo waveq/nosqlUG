@@ -103,25 +103,14 @@ wyszukają najczęściej występujące słowa z Wikipedia data PL.
 
 [Plik do pobrania](http://dumps.wikimedia.org/plwiki/latest/plwiki-latest-pages-articles-multistream.xml.bz2)
 
-By zaimportować plik do bazy wykorzystałem  [skrypt.php](/scripts/3B.php) [XML2CSVGenericConverter](http://sourceforge.net/projects/xml2csvgenericconverter/files/?source=navbar)
+By zaimportować plik do bazy wykorzystałem  [skrypt.php](/scripts/3B.php) 
 
-```
-java -jar XML2CSVGenericConverter_V1.0.0.jar -v -i /nosql/wiki.xml -o /nosql/
-```
 
 Czas trwania:
 ```
-34 min
-```
-
-Import pliku do bazy:
-```
-mongoimport -d wikipedia -c wikipedia --type csv --file wiki.csv --headerline --ignoreBlanks
-```
-
-Czas trwania:
-```
-118 min
+real    92m23.729s
+user    0m0.000s
+sys     0m0.053s
 ```
 
 **Map**
